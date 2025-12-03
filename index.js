@@ -24,4 +24,15 @@ async function createCourse() {
     const result = await course.save();
     console.log(result);
 }
-createCourse();
+
+async function getCourses() {
+    const Course = mongoose.model('Course', courseSchema)
+    const courses = await Course
+        .find({ author: 'Masud', isPublished: true })
+        .limit(10)
+        .sort({name: 1})
+        .select({tags: 1, name: 1});
+    console.log(courses);
+}
+
+getCourses();
