@@ -29,6 +29,8 @@ async function createCourse() {
 }
 
 async function getCourses() {
+    pageNumber = 2;
+    pageSize = 10;
     const courses = await Course
         //.find({ author: 'Masud', isPublished: true })
         //.find({ price: { $gte: 10, $lte: 15}})
@@ -40,7 +42,8 @@ async function getCourses() {
 
         //.or([{ author: 'Masud'}, {isPublished: true }]).
         // .and([{ author: 'Masud'}, { isPublished: true }])
-        .limit(10)
+        .skip((pageNumber - 1) * pageSize)
+        .limit(pageSize)
         .sort({name: 1})
         .countDocuments();
         //.select({tags: 1, name: 1});
