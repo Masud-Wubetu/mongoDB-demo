@@ -39,10 +39,11 @@ async function getCourses() {
         .find({author: /.*masud.*/i})
 
         //.or([{ author: 'Masud'}, {isPublished: true }]).
-        .and([{ author: 'Masud'}, { isPublished: true }])
+        // .and([{ author: 'Masud'}, { isPublished: true }])
         .limit(10)
         .sort({name: 1})
-        .select({tags: 1, name: 1});
+        .countDocuments();
+        //.select({tags: 1, name: 1});
     console.log(courses);
 }
 
