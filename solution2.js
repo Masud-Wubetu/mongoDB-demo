@@ -14,9 +14,10 @@ const courseSchema = new moongose.Schema({
 const Course = moongose.model('Course', courseSchema);
 async function getCourses() {
     return await Course
-        .find({ isPublished: true, tags: 'backend' })
-        .sort({ name: 1 })
-        .select({ name: 1, author: 1 })
+        .find({ isPublished: true })
+        .or([{ tags: 'backend'}, { tags: 'frontend'}])
+        .sort({ price: -1 })
+        .select({ name: 1, author: 1, price: 1 })
 }
 
 async function run() {
