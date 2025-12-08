@@ -1,37 +1,72 @@
 [
   {
     "_id": "5a68fdc3615eda645bc6bdec",
+    "name": "Express Course",
+    "author": "Masud",
     "tags": ["express", "backend"],
-    "date": "2025-01-01T10:00:00.000Z"
+    "date": "2025-01-01T10:00:00.000Z",
+    "isPublished": true,
+    "price": 10,
+    "__v": 0
   },
   {
     "_id": "5a68fd7bee8ea64649c2777",
+    "name": "Node Basics",
+    "author": "Masud",
     "tags": ["node", "backend"],
-    "date": "2025-01-02T10:00:00.000Z"
+    "date": "2025-01-02T10:00:00.000Z",
+    "isPublished": true,
+    "price": 15,
+    "__v": 0
   },
   {
     "_id": "5a68fde3f09ad7646ddec17e",
+    "name": "ASP.NET Introduction",
+    "author": "Masud",
     "tags": ["aspnet", "backend"],
-    "date": "2025-01-03T10:00:00.000Z"
+    "date": "2025-01-03T10:00:00.000Z",
+    "isPublished": false,
+    "price": 12,
+    "__v": 0
   },
   {
     "_id": "5a68fdf95db93f6477053ddd",
+    "name": "React for Beginners",
+    "author": "Masud",
     "tags": ["react", "frontend"],
-    "date": "2025-01-04T10:00:00.000Z"
+    "date": "2025-01-04T10:00:00.000Z",
+    "isPublished": true,
+    "price": 20,
+    "__v": 0
   },
   {
     "_id": "5a68fe2124ae6a6482c4c9cb",
+    "name": "Node Advanced",
+    "author": "Masud",
     "tags": ["node", "backend"],
-    "date": "2025-01-05T10:00:00.000Z"
+    "date": "2025-01-05T10:00:00.000Z",
+    "isPublished": true,
+    "price": 18,
+    "__v": 0
   },
   {
     "_id": "5a68ff090c553064a218a547",
+    "name": "Node Mastery",
+    "author": "Masud",
     "tags": ["node", "backend"],
-    "date": "2025-01-06T10:00:00.000Z"
+    "date": "2025-01-06T10:00:00.000Z",
+    "isPublished": false,
+    "price": 25,
+    "__v": 0
   },
   {
     "_id": "5a6900fff467be65019a9001",
+    "name": "Angular Crash Course",
+    "author": "Masud",
     "tags": ["angular", "frontend"],
-    "date": "2025-01-07T10:00:00.000Z"
+    "date": "2025-01-07T10:00:00.000Z",
+    "isPublished": true,
+    "price": 30,
+    "__v": 0
   }
 ]
